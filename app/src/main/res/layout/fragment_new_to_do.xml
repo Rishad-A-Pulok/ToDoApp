@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25sp"
+        tools:context=".NewToDoFragment">
+
+        <EditText
+            android:id="@+id/toDoNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter What to Do"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="Set Priority"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/priorityRG"
+            android:padding="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/lowRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/mediumRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/highRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+
+            <Button
+                android:id="@+id/dateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Select Date"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/showDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="27/06/2022"
+                android:layout_marginLeft="20sp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+
+            <Button
+                android:id="@+id/timeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Select Time"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/showTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                tools:text="06:00 PM"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:background="@color/teal_200"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="15sp" />
+    </LinearLayout>
+</layout>
